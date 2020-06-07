@@ -1,4 +1,4 @@
-//Creates Autocomplete search input 
+//Creates Autocomplete search bar input 
 const createAutoComplete = ({
   root,
   renderOption,
@@ -28,7 +28,7 @@ const createAutoComplete = ({
       dropdown.classList.remove('is-active');
       return;
     }
-
+    //else create 'a' element to the drop down.
     resultsWrapper.innerHTML = '';
     dropdown.classList.add('is-active');
     for (let item of items) {
